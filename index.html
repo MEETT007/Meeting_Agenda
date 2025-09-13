@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Meeting Agenda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f;
+            background-image: linear-gradient(135deg, #0a192f 0%, #152238 100%);
+        }
+        .line-through-text {
+            text-decoration: line-through;
+            color: #a6a6a6; /* Light Gray for dark background */
+        }
+        .accent-green {
+            accent-color: #64ffda; /* Vibrant Green */
+        }
+        .accent-red {
+            accent-color: #ef4444; /* Red-500 */
+        }
+        .glass {
+            background: rgba(26, 43, 64, 0.5); /* Semi-transparent dark background */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+        .message-box {
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+    <div id="main-content" class="glass p-8 rounded-3xl shadow-2xl w-full max-w-4xl transition-transform duration-300 transform hover:scale-[1.01]">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-[#64ffda] mb-2 text-center">Team Meeting Agenda</h1>
+        <h2 class="text-xl sm:text-2xl font-semibold text-[#f0f8ff] mb-8 text-center">InGrowwth Innovations</h2>
+        
+        <div id="agenda-list" class="space-y-6">
+            <!-- Point 1: Work Sharing -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-1">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-1" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        1. Work Sharing with teams
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 2: Not informing the team -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-2">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-2" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        2. Not informing the team
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 3: Have various excuses -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-3">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-3" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        3. Have various excuses
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 4: Lack of communication with team -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-4">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-4" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        4. Lack of communication with team
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 5: Do not make a day planner -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-5">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-5" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        5. Do not make a day planner
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 6: Not working together (Main Point) -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)] border-2 border-red-500">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-red flex-shrink-0 agenda-checkbox" data-target="point-6">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-6" class="text-lg font-bold text-red-500 transition-colors duration-300">
+                        6. Not working together (main point highlight this)
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+            
+            <!-- Point 7: Have to maintain some decorum (Krushnaraj) -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-7">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-7" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        7. Have to maintain some decorum (pick uping calls, not proper answer given, not clear about their information special mention Krushnaraj)
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 8: Not giving their thoughts -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-8">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-8" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        8. Not giving their thoughts
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 9: not coming when there is important work (Darshan) -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-9">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-9" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        9. not coming when there is important work/ point to dicuss special mention darshan
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 10: not about their future goals -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-10">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-10" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        10. not about their future goals
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 11: not taking risks in life (Second Main Point) -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)] border-2 border-red-500">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-red flex-shrink-0 agenda-checkbox" data-target="point-11">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-11" class="text-lg font-bold text-red-500 transition-colors duration-300">
+                        11. not taking risks in life ( second main point )
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- Point 12: final decision about staying or leaving the company -->
+            <div class="glass p-6 rounded-2xl flex flex-col sm:flex-row items-start transition duration-300 ease-in-out hover:bg-[rgba(255,255,255,0.1)]">
+                <input type="checkbox" class="w-6 h-6 mr-4 mt-1 cursor-pointer accent-green flex-shrink-0 agenda-checkbox" data-target="point-12">
+                <div class="flex-1 w-full mt-2 sm:mt-0">
+                    <p id="point-12" class="text-lg font-medium text-[#f0f8ff] transition-colors duration-300">
+                        12. final decision about staying or leaving the company
+                    </p>
+                    <textarea class="w-full mt-4 p-3 rounded-lg border-2 border-[#64ffda] bg-transparent text-[#f0f8ff] focus:outline-none focus:ring-2 focus:ring-[#64ffda] text-sm placeholder-[#a6a6a6] transition-all duration-200" rows="2" placeholder="Write meeting notes or decisions here..."></textarea>
+                </div>
+            </div>
+
+            <!-- New Section for Final Decision -->
+            <div class="pt-6 border-t-2 border-[#a6a6a6]">
+                <h3 class="text-2xl font-bold text-[#64ffda] mb-4 text-center">Final Decisions</h3>
+                <p class="text-center text-[#f0f8ff] mb-6">Please indicate your final decision below.</p>
+                <div class="space-y-4">
+                    <div class="glass p-4 rounded-xl flex items-center justify-between border border-[#a6a6a6]">
+                        <span class="text-lg font-medium text-[#f0f8ff]">Meet</span>
+                        <div class="flex space-x-4">
+                            <label class="flex items-center text-green-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_meet" value="yes" class="w-5 h-5 mr-1 accent-green-500"> Yes
+                            </label>
+                            <label class="flex items-center text-red-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_meet" value="no" class="w-5 h-5 mr-1 accent-red-500"> No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center justify-between border border-[#a6a6a6]">
+                        <span class="text-lg font-medium text-[#f0f8ff]">Saurav</span>
+                        <div class="flex space-x-4">
+                            <label class="flex items-center text-green-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_saurav" value="yes" class="w-5 h-5 mr-1 accent-green-500"> Yes
+                            </label>
+                            <label class="flex items-center text-red-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_saurav" value="no" class="w-5 h-5 mr-1 accent-red-500"> No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center justify-between border border-[#a6a6a6]">
+                        <span class="text-lg font-medium text-[#f0f8ff]">Darshan</span>
+                        <div class="flex space-x-4">
+                            <label class="flex items-center text-green-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_darshan" value="yes" class="w-5 h-5 mr-1 accent-green-500"> Yes
+                            </label>
+                            <label class="flex items-center text-red-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_darshan" value="no" class="w-5 h-5 mr-1 accent-red-500"> No
+                            </label>
+                        </div>
+                    </div>
+                    <div class="glass p-4 rounded-xl flex items-center justify-between border border-[#a6a6a6]">
+                        <span class="text-lg font-medium text-[#f0f8ff]">Krushnaraj</span>
+                        <div class="flex space-x-4">
+                            <label class="flex items-center text-green-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_krushnaraj" value="yes" class="w-5 h-5 mr-1 accent-green-500"> Yes
+                            </label>
+                            <label class="flex items-center text-red-500 font-semibold cursor-pointer">
+                                <input type="radio" name="decision_krushnaraj" value="no" class="w-5 h-5 mr-1 accent-red-500"> No
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 flex justify-center">
+                <button id="nextPageBtn" class="bg-[#64ffda] text-[#0a192f] font-bold py-3 px-6 rounded-full shadow-lg hover:bg-opacity-80 transition-all duration-300 transform hover:scale-105">
+                    IF YES
+                </button>
+            </div>
+            
+            <!-- Message box for user guidance -->
+            <div id="message-box" class="message-box fixed p-4 rounded-lg bg-red-600 text-white shadow-xl hidden transition-opacity duration-300 opacity-0">
+                Please select 'Yes' for at least one team member.
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Next Page Content (initially hidden) -->
+    <div id="next-page-content" class="glass p-8 rounded-3xl shadow-2xl w-full max-w-4xl transition-transform duration-300 transform hidden">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-[#64ffda] mb-2 text-center">Next Steps</h1>
+        <p class="text-lg text-center text-[#f0f8ff] mt-4">
+            Thank you for confirming. You can now proceed with the next steps based on the decisions made.
+        </p>
+        <p class="text-center text-[#a6a6a6] mt-4">
+            This is a placeholder for the next page's content.
+        </p>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.agenda-checkbox');
+            const nextPageBtn = document.getElementById('nextPageBtn');
+            const mainContent = document.getElementById('main-content');
+            const nextPageContent = document.getElementById('next-page-content');
+            const messageBox = document.getElementById('message-box');
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', (event) => {
+                    const targetId = event.target.getAttribute('data-target');
+                    const targetTextElement = document.getElementById(targetId);
+                    
+                    if (event.target.checked) {
+                        targetTextElement.classList.add('line-through-text');
+                    } else {
+                        targetTextElement.classList.remove('line-through-text');
+                    }
+                });
+            });
+
+            nextPageBtn.addEventListener('click', () => {
+                const yesOptions = document.querySelectorAll('input[name^="decision_"][value="yes"]:checked');
+                
+                if (yesOptions.length > 0) {
+                    // At least one 'Yes' is selected, proceed to next page
+                    mainContent.classList.add('hidden');
+                    nextPageContent.classList.remove('hidden');
+                    messageBox.classList.add('hidden', 'opacity-0');
+                } else {
+                    // No 'Yes' is selected, show message
+                    messageBox.classList.remove('hidden');
+                    setTimeout(() => {
+                        messageBox.classList.remove('opacity-0');
+                    }, 10);
+                    setTimeout(() => {
+                        messageBox.classList.add('opacity-0');
+                        setTimeout(() => {
+                            messageBox.classList.add('hidden');
+                        }, 300);
+                    }, 3000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
